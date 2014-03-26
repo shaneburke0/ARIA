@@ -1,4 +1,10 @@
-﻿myApp.controller('CalcCtrl', ['$scope',
+﻿/*
+ *  Original implementation by Glenn Gervais
+ *  url: http://rabidgadfly.com/2012/12/angularjs-simple-calculator/
+ *  Modified: changed original implementation to include multiply and divide functions.
+ */
+
+myApp.controller('CalcCtrl', ['$scope',
 	function ($scope) {
 	    // Bound to the output display
 	    $scope.output = "0";
