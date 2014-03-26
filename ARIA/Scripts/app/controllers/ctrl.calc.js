@@ -83,7 +83,7 @@
 	        if ($scope.pendingValue) {
 	            if ($scope.runningTotal && $scope.pendingOperation == MULTIPLY) {
 	                $scope.runningTotal = $scope.runningTotal * $scope.pendingValue;
-	            } if ($scope.runningTotal && ($scope.pendingOperation == SUBTRACT)) {
+	            } else if ($scope.runningTotal && ($scope.pendingOperation == SUBTRACT)) {
 	                $scope.runningTotal -= $scope.pendingValue;
 	            } else if ($scope.runningTotal && $scope.pendingOperation == ADD) {
 	                $scope.runningTotal += $scope.pendingValue;
@@ -136,7 +136,7 @@
 	                $scope.runningTotal = $scope.runningTotal / $scope.pendingValue;
 	            } else if ($scope.runningTotal && $scope.pendingOperation == MULTIPLY) {
 	                $scope.runningTotal = $scope.runningTotal * $scope.pendingValue;
-	            } if ($scope.runningTotal && ($scope.pendingOperation == SUBTRACT)) {
+	            } else if ($scope.runningTotal && ($scope.pendingOperation == SUBTRACT)) {
 	                $scope.runningTotal -= $scope.pendingValue;
 	            } else if ($scope.runningTotal && $scope.pendingOperation == ADD) {
 	                $scope.runningTotal += $scope.pendingValue;
