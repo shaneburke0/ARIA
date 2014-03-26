@@ -53,3 +53,66 @@ input[type="checkbox"].input-validation-error {
         padding: 10px 15px;
     }
 }
+
+.center {
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thinborder {
+    border:1px solid #ccc;
+    width:173px;
+    height:60px;
+    background:black;
+}
+.calcbuttons {
+    padding:10px;
+}
+.numbtn {
+    width:35px;
+}
+.opbtn {
+    width:35px;
+}
+
+.eqbtn {
+    width:152px;
+    background-color:#999;
+    color:white;
+}
+
+.clrbtn {
+    width:74px;
+    background-color:#999;
+    color:white;
+}
+.output {
+    background:black;
+    color:lime;
+    font-family:"Courier New", Courier;
+    padding:0 10px;
+    text-align:right;
+    font-size:14px;
+}
+.calcbody {
+    background:#333;
+    width:193px;
+    padding:10px;
+    box-shadow: 5px 5px 5px #888888;
+    border-radius:12px;
+}
+
+.calcbuttons button {
+    margin: 2px 0;
+}
+
+.outputdiv {
+    margin-top: 20px;
+}
+
+
+.outputdiv label {
+    font-weight: bold;
+    padding-right: 10px;
+}

@@ -208,6 +208,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\app\app.js" />
+    <Content Include="Scripts\app\controllers\ctrl.calc.js" />
     <Content Include="Scripts\libs\angular\angular-animate.js" />
     <Content Include="Scripts\libs\angular\angular-animate.min.js" />
     <Content Include="Scripts\libs\angular\angular-cookies.js" />
@@ -488,6 +489,18 @@
     <Content Include="Scripts\libs\jquery\jquery-1.10.2.min.js" />
     <Content Include="Scripts\libs\modernizr\modernizr-2.6.2.js" />
     <Content Include="Scripts\libs\_references.js" />
+    <Content Include="Scripts\tests\lib\jasmine-2.0.0\boot.js" />
+    <Content Include="Scripts\tests\lib\jasmine-2.0.0\console.js" />
+    <Content Include="Scripts\tests\lib\jasmine-2.0.0\jasmine-html.js" />
+    <Content Include="Scripts\tests\lib\jasmine-2.0.0\jasmine.css" />
+    <Content Include="Scripts\tests\lib\jasmine-2.0.0\jasmine.js" />
+    <Content Include="Scripts\tests\lib\jasmine-2.0.0\jasmine_favicon.png" />
+    <Content Include="Scripts\tests\spec\CalcSpec.js" />
+    <Content Include="Scripts\tests\spec\PlayerSpec.js" />
+    <Content Include="Scripts\tests\spec\SpecHelper.js" />
+    <Content Include="Scripts\tests\src\Player.js" />
+    <Content Include="Scripts\tests\src\Song.js" />
+    <Content Include="SpecRunner.html" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
@@ -510,7 +523,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\" />
-    <Folder Include="Scripts\app\controllers\" />
     <Folder Include="Scripts\app\models\" />
     <Folder Include="Scripts\app\views\" />
   </ItemGroup>
