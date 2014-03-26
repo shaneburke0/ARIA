@@ -25,14 +25,14 @@
 	    $scope.lastOperation = null;
 
 	    // Constants
-	    var ADD = "adding";
-	    var SUBTRACT = "subtracting";
-	    var ADD_TOKEN = "+";
-	    var SUBTRACT_TOKEN = "-";
-	    var MULTIPLY = "multiplying";
-	    var DIVIDE = "dividing";
-	    var MULTIPLY_TOKEN = "*";
-	    var DIVIDE_TOKEN = "/";
+	    var ADD = "adding",
+            SUBTRACT = "subtracting",
+            ADD_TOKEN = "+",
+            SUBTRACT_TOKEN = "-",
+            MULTIPLY = "multiplying",
+            DIVIDE = "dividing",
+            MULTIPLY_TOKEN = "*",
+            DIVIDE_TOKEN = "/";
 
 	    /*
          * Runs every time a number button is clicked.
@@ -51,12 +51,6 @@
 
 	    /*
          * Runs every time the add button is clicked.
-         * If a number has been entered before the add
-         * button was clicked we set the number as a pendingValue,
-         * set ADD as a pendingOperation, and set the token. 
-         * If no number was entered but an existing calculated
-         * number is in the output display we add the last added
-         * value on to the total again.
          */
 	    $scope.add = function () {
 	        if ($scope.pendingValue) {
@@ -79,6 +73,9 @@
 	        $scope.pendingValue = null;
 	    };
 
+	    /*
+         * Runs every time the multiply button is clicked.
+         */
 	    $scope.multiply = function () {
 	        if ($scope.pendingValue) {
 	            if ($scope.runningTotal && $scope.pendingOperation == MULTIPLY) {
@@ -102,12 +99,6 @@
 
 	    /*
          * Runs every time the subtract button is clicked.
-         * If a number has been entered before the subtract
-         * button was clicked we set the number as a pendingValue,
-         * set subtract as a pendingOperation, and set the token. 
-         * If no number was entered but an existing calculated
-         * number is in the output display we subtract the last added
-         * value from the total.
          */
 	    $scope.subtract = function () {
 	        if ($scope.pendingValue) {
@@ -130,6 +121,9 @@
 	        $scope.pendingValue = null;
 	    };
 
+	    /*
+         * Runs every time the divide button is clicked.
+         */
 	    $scope.divide = function () {
 	        if ($scope.pendingValue) {
 	            if ($scope.runningTotal && $scope.pendingOperation == DIVIDE) {
