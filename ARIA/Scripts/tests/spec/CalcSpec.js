@@ -228,4 +228,57 @@ describe("CalculatorController", function () {
             expect($scope.runningTotal).toEqual(-2);
         });
     });
+
+    describe("Global Variables", function () {
+
+        var $scope, ctrl;
+
+        beforeEach(
+            inject(function ($rootScope, $controller) {
+                $scope = $rootScope.$new();
+                ctrl = $controller('CalcCtrl', {
+                    $scope: $scope
+                });
+            }));
+
+        it("should store pendingValue.", function () {
+            $scope.updateOutput(7);
+            expect($scope.pendingValue).toEqual(7);
+        });
+
+        it("should store as new number.", function () {
+            $scope.updateOutput(7);
+            $scope.add();
+            expect($scope.newNumber).toBe(true);
+        });
+
+        it("should not store as new number.", function () {
+            $scope.updateOutput(7);
+            $scope.add();
+            $scope.updateOutput(4);
+            expect($scope.newNumber).toBe(false);
+        });
+
+        it("should store running total.", function () {
+            $scope.updateOutput(7);
+            $scope.add();
+            $scope.updateOutput(7);
+            $scope.calculate();
+            expect($scope.runningTotal).toEqual(14);
+        });
+
+        it("should store last operation.", function () {
+            $scope.updateOutput(7);
+            $scope.add();
+            $scope.updateOutput(7);
+            $scope.calculate();
+            expect($scope.lastOperation).toEqual("adding");
+        });
+
+        it("should store pending operation.", function () {
+            $scope.updateOutput(7);
+            $scope.add();;
+            expect($scope.pendingOperation).toEqual("adding");
+        });
+    });
 });
